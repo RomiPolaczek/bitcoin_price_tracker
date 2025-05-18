@@ -6,10 +6,10 @@ import requests
 from config import API, JSON_FILE_NAME
 
 
-def get_bitcoin_price():
+def get_bitcoin_price(session):
     try:
         logger.info("Requesting Bitcoin price from API")
-        response = requests.get(API)
+        response = session.get(API)
 
         if response.status_code == 200:
             data = response.json()
@@ -28,10 +28,11 @@ def get_bitcoin_price():
 def fetch_prices_data(duration_minutes):
 
     logger.info(f"Starting to collect Bitcoin prices for {duration_minutes} minutes")
-
     prices_data = []
+    session = requests.Session()
+
     for i in range(duration_minutes):
-        price = get_bitcoin_price()
+        price = get_bitcoin_price(session)
 
         if price is not None:
             timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
