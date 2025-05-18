@@ -1,8 +1,9 @@
+import json
 import time
 
 from logger_setup import logger
 import requests
-from config import API
+from config import API, JSON_FILE_NAME
 
 
 def get_bitcoin_price():
@@ -36,6 +37,8 @@ def fetch_prices(duration_minutes):
             timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
             prices.append({"timestamp": timestamp,  "price": price})
             logger.info(f"Added price: {timestamp}, ${price}")
+            save_to_json_file(prices)
+
         else:
             logger.warning("Failed to get price")
 
@@ -43,3 +46,14 @@ def fetch_prices(duration_minutes):
 
     logger.info(f"Completed collection of {len(prices)} bitcoin prices")
     return prices
+
+
+def save_to_json_file(prices):
+
+    try:
+        with open(JSON_FILE_NAME, 'w') as f:
+            json.dump(prices, f, indent=4)
+
+        logger.info(f"Saved {len(prices)} prices to {JSON_FILE_NAME}")
+    except Exception as e:
+        logger.error(f"Error saving to JSON: {str(e)}")
