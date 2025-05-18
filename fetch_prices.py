@@ -25,27 +25,27 @@ def get_bitcoin_price():
         return None
 
 
-def fetch_prices(duration_minutes):
+def fetch_prices_data(duration_minutes):
 
     logger.info(f"Starting to collect Bitcoin prices for {duration_minutes} minutes")
 
-    prices = []
+    prices_data = []
     for i in range(duration_minutes):
         price = get_bitcoin_price()
 
         if price is not None:
             timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-            prices.append({"timestamp": timestamp,  "price": price})
-            logger.info(f"Added price: {timestamp}, ${price}")
-            save_to_json_file(prices)
+            prices_data.append({"timestamp": timestamp,  "price": price})
+            logger.info(f"Added price data to the list: {timestamp}, ${price}")
+            save_to_json_file(prices_data)
 
         else:
             logger.warning("Failed to get price")
 
         time.sleep(60)
 
-    logger.info(f"Completed collection of {len(prices)} bitcoin prices")
-    return prices
+    logger.info(f"Completed collection of {len(prices_data)} bitcoin prices")
+    return prices_data
 
 
 def save_to_json_file(prices):

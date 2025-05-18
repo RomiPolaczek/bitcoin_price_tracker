@@ -5,6 +5,8 @@ from config import LOG_FILE_NAME
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
+logging.getLogger('matplotlib').setLevel(logging.WARNING)
+
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 file_handler = logging.FileHandler(LOG_FILE_NAME)
