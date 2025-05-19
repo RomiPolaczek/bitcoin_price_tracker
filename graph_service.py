@@ -1,5 +1,6 @@
 from datetime import datetime
 import matplotlib.pyplot as plt
+from config import GRAPH_PNG_FILE_NAME
 from logger_setup import logger
 
 
@@ -24,7 +25,7 @@ def generate_price_graph(prices_data):
 
         timestamp = datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
         plt.tight_layout()
-        plt.savefig(f"bitcoin_graph_{timestamp}.png")
+        plt.savefig(f"{GRAPH_PNG_FILE_NAME}_{timestamp}.png")
         logger.info(f"Graph saved")
 
     except Exception as e:
