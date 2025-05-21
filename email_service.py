@@ -12,7 +12,6 @@ RECEIVER_EMAIL = os.getenv("RECEIVER_EMAIL")
 
 
 def send_max_price_email(prices_data):
-
     try:
         logger.info("Preparing email...")
 

@@ -7,7 +7,7 @@ logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
 logging.getLogger('matplotlib').setLevel(logging.WARNING)
 
-formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
 file_handler = logging.FileHandler(LOG_FILE_NAME)
 file_handler.setFormatter(formatter)

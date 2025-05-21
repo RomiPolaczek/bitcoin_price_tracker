@@ -6,7 +6,6 @@ from graph_service import generate_price_graph
 
 
 def main():
-
     logger.info("Starting bitcoin price tracker application")
     bitcoin_prices_data = fetch_prices_data(DATA_COLLECTION_DURATION_MINUTES)
 

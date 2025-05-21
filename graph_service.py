@@ -1,11 +1,11 @@
 from datetime import datetime
 import matplotlib.pyplot as plt
+from matplotlib import ticker
 from config import GRAPH_PNG_FILE_NAME
 from logger_setup import logger
 
 
 def generate_price_graph(prices_data):
-
     try:
         logger.info("Generating price graph")
 
@@ -22,6 +22,9 @@ def generate_price_graph(prices_data):
         plt.ylabel('Price (USD)')
         plt.grid(True)
         plt.xticks(rotation=45)
+
+        ax = plt.gca()
+        ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f'{x:,.0f}'))  # fix y-axis numbers
 
         timestamp = datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
         plt.tight_layout()

@@ -1,12 +1,11 @@
 import json
 import time
-
 from logger_setup import logger
 import requests
 from config import API, JSON_FILE_NAME
 
 
-def get_bitcoin_price(session):
+def fetch_bitcoin_price_from_api(session):
     try:
         logger.info("Requesting Bitcoin price from API")
         response = session.get(API)
@@ -26,13 +25,12 @@ def get_bitcoin_price(session):
 
 
 def fetch_prices_data(duration_minutes):
-
     logger.info(f"Starting to collect Bitcoin prices for {duration_minutes} minutes")
     prices_data = []
     session = requests.Session()
 
     for i in range(duration_minutes):
-        price = get_bitcoin_price(session)
+        price = fetch_bitcoin_price_from_api(session)
 
         if price is not None:
             timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
@@ -50,7 +48,6 @@ def fetch_prices_data(duration_minutes):
 
 
 def save_to_json_file(prices):
-
     try:
         with open(JSON_FILE_NAME, 'w') as f:
             json.dump(prices, f, indent=4)
