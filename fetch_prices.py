@@ -1,8 +1,10 @@
 import json
 import time
-from logger_setup import logger
 import requests
 from config import API, JSON_FILE_NAME
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def fetch_bitcoin_price_from_api(session):
@@ -12,11 +14,13 @@ def fetch_bitcoin_price_from_api(session):
 
         if response.status_code == 200:
             data = response.json()
-            price = float(data['data']['amount'])
+            price = float(data["data"]["amount"])
             logger.info(f"Bitcoin price: ${price}")
             return price
         else:
-            logger.error(f"API request failed: status code: {response.status_code} error detail: {response.json()}")
+            logger.error(
+                f"API request failed: status code: {response.status_code} error detail: {response.json()}"
+            )
             return None
 
     except Exception as e:
@@ -33,8 +37,8 @@ def fetch_prices_data(duration_minutes):
         price = fetch_bitcoin_price_from_api(session)
 
         if price is not None:
-            timestamp = time.strftime('%Y-%m-%d %H:%M:%S')
-            prices_data.append({"timestamp": timestamp,  "price": price})
+            timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+            prices_data.append({"timestamp": timestamp, "price": price})
             logger.info(f"Added price data to the list: {timestamp}, ${price}")
             save_to_json_file(prices_data)
 
@@ -49,7 +53,7 @@ def fetch_prices_data(duration_minutes):
 
 def save_to_json_file(prices):
     try:
-        with open(JSON_FILE_NAME, 'w') as f:
+        with open(JSON_FILE_NAME, "w") as f:
             json.dump(prices, f, indent=4)
 
         logger.info(f"Saved {len(prices)} prices to {JSON_FILE_NAME}")

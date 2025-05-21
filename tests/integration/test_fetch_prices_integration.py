@@ -33,10 +33,7 @@ def test_fetch_prices_data(mock_sleep):
         assert item["price"] > 0
 
     assert os.path.exists(JSON_FILE_NAME)
-    with open(JSON_FILE_NAME, 'r') as f:
+    with open(JSON_FILE_NAME, "r") as f:
         data = json.load(f)
         assert isinstance(data, list)
         assert len(data) >= 2
-
-
-

@@ -1,8 +1,10 @@
 import smtplib
 import os
-from logger_setup import logger
+import logging
 from email.mime.text import MIMEText
 from dotenv import load_dotenv
+
+logger = logging.getLogger(__name__)
 
 load_dotenv()
 
@@ -27,11 +29,11 @@ def send_max_price_email(prices_data):
                """
 
         msg = MIMEText(body)
-        msg['Subject'] = 'Bitcoin Price Report - Maximum Price'
-        msg['From'] = SENDER_EMAIL
-        msg['To'] = RECEIVER_EMAIL
+        msg["Subject"] = "Bitcoin Price Report - Maximum Price"
+        msg["From"] = SENDER_EMAIL
+        msg["To"] = RECEIVER_EMAIL
 
-        with smtplib.SMTP('smtp.gmail.com', 587) as server:
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:
             server.starttls()
             server.login(SENDER_EMAIL, SENDER_EMAIL_PASSWORD)
             server.send_message(msg)
