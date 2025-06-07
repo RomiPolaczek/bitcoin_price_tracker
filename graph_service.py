@@ -1,4 +1,6 @@
 from datetime import datetime
+import matplotlib
+matplotlib.use('Agg')  # Use non-GUI backend
 import matplotlib.pyplot as plt
 from matplotlib import ticker
 from config import GRAPH_PNG_FILE_NAME
@@ -33,6 +35,7 @@ def generate_price_graph(prices_data):
         timestamp = datetime.now().strftime("%d-%m-%Y_%H:%M:%S")
         plt.tight_layout()
         plt.savefig(f"{GRAPH_PNG_FILE_NAME}_{timestamp}.png")
+        plt.close()  # Important: close the figure to free memory
         logger.info(f"Graph saved")
 
     except Exception as e:

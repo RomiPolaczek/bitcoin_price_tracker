@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bitcoin Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta http-equiv="refresh" content="15">
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Price Tracker</h1>
+
+        <div class="status-box {% if is_tracking %}active{% endif %}">
+            <span class="dot {% if is_tracking %}active{% endif %}"></span>
+            <strong>{{ message }}</strong>
+        </div>
+
+        <div class="card">
+            <h2>Start Tracking</h2>
+            <form method="POST" action="/start">
+                <label>Duration (minutes):</label>
+                <input type="number" name="duration" value="60" min="1" max="1440"
+                       {% if is_tracking %}disabled{% endif %}>
+                <button type="submit" {% if is_tracking %}disabled{% endif %}>
+                    {% if is_tracking %}Tracking...{% else %}Start Tracking{% endif %}
+                </button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>How it works</h2>
+            <p>• Tracks Bitcoin prices from Coinbase API</p>
+            <p>• Sends email with highest price found</p>
+            <p>• Saves price graph as PNG file</p>
+            <p>• Page refreshes automatically to show progress</p>
+        </div>
+    </div>
+</body>
+</html>
