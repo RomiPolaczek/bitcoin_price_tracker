@@ -3,26 +3,29 @@
 <head>
     <title>Bitcoin Tracker</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <meta http-equiv="refresh" content="15">
+    {% if tracking_active %}
+    <meta http-equiv="refresh" content="5">
+    {% endif %}
 </head>
 <body>
     <div class="container">
         <h1>Bitcoin Price Tracker</h1>
 
-        <div class="status-box {% if is_tracking %}active{% endif %}">
-            <span class="dot {% if is_tracking %}active{% endif %}"></span>
-            <strong>{{ message }}</strong>
-        </div>
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}" id="flash_message">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
 
         <div class="card">
             <h2>Start Tracking</h2>
             <form method="POST" action="/start">
-                <label>Duration (minutes):</label>
-                <input type="number" name="duration" value="60" min="1" max="1440"
-                       {% if is_tracking %}disabled{% endif %}>
-                <button type="submit" {% if is_tracking %}disabled{% endif %}>
-                    {% if is_tracking %}Tracking...{% else %}Start Tracking{% endif %}
-                </button>
+                <label id="duration_min_label">Duration (minutes):</label>
+                <input type="number" id="duration" name="duration" value="{{ last_duration }}" min="1">
+                <button type="submit" id="submit_duration">Start Tracking</button>
             </form>
         </div>
 
@@ -31,7 +34,12 @@
             <p>• Tracks Bitcoin prices from Coinbase API</p>
             <p>• Sends email with highest price found</p>
             <p>• Saves price graph as PNG file</p>
-            <p>• Page refreshes automatically to show progress</p>
+            <p>• Runs in background - you can close this page</p>
+            {% if tracking_active %}
+            <p><strong>Currently tracking... Page refreshes automatically until complete</strong></p>
+            {% else %}
+            <p><strong>No active tracking - page won't auto-refresh</strong></p>
+            {% endif %}
         </div>
     </div>
 </body>

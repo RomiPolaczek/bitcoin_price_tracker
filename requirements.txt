@@ -3,3 +3,5 @@ pytest==8.3.5
 matplotlib==3.10.3
 dotenv==0.9.9
 black
+selenium==4.33.0
+Flask==3.1.1
