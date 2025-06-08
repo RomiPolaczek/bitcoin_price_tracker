@@ -1,5 +1,10 @@
 import pytest
 from selenium import webdriver
+import threading
+import time
+
+from config import HOST, PORT
+from ui_main import app
 
 
 @pytest.fixture
@@ -19,5 +24,19 @@ def driver(request):
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--browser", action="store", default="chrome", help="browser to execute tests (chrome or firefox)"
+        "--browser", action="store", default="chrome", help="browser to execute tests (chrome or safari)"
     )
+
+
+@pytest.fixture(scope="session", autouse=True)
+def flask_server():
+    def run_server():
+        app.run(debug=False,  host=HOST, port=PORT, use_reloader=False)
+
+    # Start server in background thread
+    server_thread = threading.Thread(target=run_server, daemon=True)
+    server_thread.start()
+
+    # Wait for server to start
+    time.sleep(2)
+    yield

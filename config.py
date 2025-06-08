@@ -6,4 +6,6 @@ LOG_FILE_NAME = "bitcoin_tracker.log"
 JSON_FILE_NAME = "bitcoin_prices.json"
 GRAPH_PNG_FILE_NAME = "price_graph"
 
-URL = "http://127.0.0.1:5000"
+HOST = "127.0.0.1"
+PORT = 5000
+URL = f"http://{HOST}:{PORT}"

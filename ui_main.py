@@ -3,7 +3,7 @@ import threading
 from fetch_prices import fetch_prices_data
 from graph_service import generate_price_graph
 from email_service import send_max_price_email
-from config import DATA_COLLECTION_DURATION_MINUTES
+from config import DATA_COLLECTION_DURATION_MINUTES, HOST, PORT
 import logger_setup
 
 app = Flask(__name__, template_folder='ui', static_folder='ui')
@@ -75,4 +75,4 @@ def start_tracking():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='127.0.0.1', port=5000)
+    app.run(debug=True, host=HOST, port=PORT)

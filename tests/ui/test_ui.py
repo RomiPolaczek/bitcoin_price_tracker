@@ -1,3 +1,6 @@
+import time
+from unittest.mock import patch
+
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
@@ -51,5 +54,33 @@ def test_form_submission_with_duration(driver):
     wait = WebDriverWait(driver, 10)
     success_msg_element = wait.until(ec.presence_of_element_located((By.ID, "flash_message")))
     assert success_msg_element.is_displayed()
-    success_msg_text = success_msg_element.text
-    assert success_msg_text == "Bitcoin tracking started! Running for 2 minutes."
+    assert success_msg_element.text == "Bitcoin tracking started! Running for 2 minutes."
+
+
+# @patch('ui_main.fetch_prices_data')
+# def test_form_submission_with_duration_error(mock_fetch, driver):
+#     mock_fetch.return_value = []
+#
+#     driver.get(URL)
+#
+#     duration_input_locator = driver.find_element(By.ID, "duration")
+#     duration_input_locator.clear()
+#     duration_input_locator.send_keys("2")
+#
+#     submit_button = driver.find_element(By.ID, "submit_duration")
+#     submit_button.click()
+#
+#     wait = WebDriverWait(driver, 10)
+#     success_msg_element = wait.until(ec.presence_of_element_located((By.ID, "flash_message")))
+#     assert success_msg_element.is_displayed()
+#     assert success_msg_element.text == "Bitcoin tracking started! Running for 2 minutes."
+#
+#     # Wait for background thread to complete - could use polling instead
+#     time.sleep(5)  # Increase to 3 seconds to be safer
+#
+#     # Refresh to see completion message
+#     driver.refresh()
+#
+#     # Should show error completion message
+#     error_msg = wait.until(ec.presence_of_element_located((By.ID, "flash_message")))
+#     assert "no price data was collected" in error_msg.text.lower()
