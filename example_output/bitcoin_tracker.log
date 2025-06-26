@@ -1,0 +1,310 @@
+2025-05-21 17:46:06,808 - INFO - Starting bitcoin price tracker application
+2025-05-21 17:46:06,809 - INFO - Starting to collect Bitcoin prices for 60 minutes
+2025-05-21 17:46:06,809 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:46:06,822 - DEBUG - Starting new HTTPS connection (1): api.coinbase.com:443
+2025-05-21 17:46:07,279 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:46:07,281 - INFO - Bitcoin price: $107790.405
+2025-05-21 17:46:07,282 - INFO - Added price data to the list: 2025-05-21 17:46:07, $107790.405
+2025-05-21 17:46:07,283 - INFO - Saved 1 prices to bitcoin_prices.json
+2025-05-21 17:47:07,283 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:47:07,797 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:47:07,799 - INFO - Bitcoin price: $107759.995
+2025-05-21 17:47:07,800 - INFO - Added price data to the list: 2025-05-21 17:47:07, $107759.995
+2025-05-21 17:47:07,803 - INFO - Saved 2 prices to bitcoin_prices.json
+2025-05-21 17:48:07,807 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:48:08,315 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:48:08,315 - INFO - Bitcoin price: $107851.325
+2025-05-21 17:48:08,315 - INFO - Added price data to the list: 2025-05-21 17:48:08, $107851.325
+2025-05-21 17:48:08,316 - INFO - Saved 3 prices to bitcoin_prices.json
+2025-05-21 17:49:08,319 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:49:08,783 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:49:08,785 - INFO - Bitcoin price: $107967.54
+2025-05-21 17:49:08,785 - INFO - Added price data to the list: 2025-05-21 17:49:08, $107967.54
+2025-05-21 17:49:08,786 - INFO - Saved 4 prices to bitcoin_prices.json
+2025-05-21 17:50:08,790 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:50:09,251 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:50:09,252 - INFO - Bitcoin price: $108105.325
+2025-05-21 17:50:09,252 - INFO - Added price data to the list: 2025-05-21 17:50:09, $108105.325
+2025-05-21 17:50:09,257 - INFO - Saved 5 prices to bitcoin_prices.json
+2025-05-21 17:51:09,260 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:51:09,770 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:51:09,771 - INFO - Bitcoin price: $108246.155
+2025-05-21 17:51:09,772 - INFO - Added price data to the list: 2025-05-21 17:51:09, $108246.155
+2025-05-21 17:51:09,778 - INFO - Saved 6 prices to bitcoin_prices.json
+2025-05-21 17:52:09,781 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:52:10,263 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:52:10,265 - INFO - Bitcoin price: $108370.225
+2025-05-21 17:52:10,265 - INFO - Added price data to the list: 2025-05-21 17:52:10, $108370.225
+2025-05-21 17:52:10,267 - INFO - Saved 7 prices to bitcoin_prices.json
+2025-05-21 17:53:10,267 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:53:10,755 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:53:10,755 - INFO - Bitcoin price: $108476.475
+2025-05-21 17:53:10,756 - INFO - Added price data to the list: 2025-05-21 17:53:10, $108476.475
+2025-05-21 17:53:10,759 - INFO - Saved 8 prices to bitcoin_prices.json
+2025-05-21 17:54:10,762 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:54:10,979 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:54:10,983 - INFO - Bitcoin price: $108468.895
+2025-05-21 17:54:10,983 - INFO - Added price data to the list: 2025-05-21 17:54:10, $108468.895
+2025-05-21 17:54:10,989 - INFO - Saved 9 prices to bitcoin_prices.json
+2025-05-21 17:55:10,993 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:55:11,181 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:55:11,183 - INFO - Bitcoin price: $108441.385
+2025-05-21 17:55:11,183 - INFO - Added price data to the list: 2025-05-21 17:55:11, $108441.385
+2025-05-21 17:55:11,185 - INFO - Saved 10 prices to bitcoin_prices.json
+2025-05-21 17:56:11,186 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:56:11,370 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:56:11,372 - INFO - Bitcoin price: $108683.85
+2025-05-21 17:56:11,372 - INFO - Added price data to the list: 2025-05-21 17:56:11, $108683.85
+2025-05-21 17:56:11,373 - INFO - Saved 11 prices to bitcoin_prices.json
+2025-05-21 17:57:11,403 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:57:11,884 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:57:11,885 - INFO - Bitcoin price: $108877.59
+2025-05-21 17:57:11,886 - INFO - Added price data to the list: 2025-05-21 17:57:11, $108877.59
+2025-05-21 17:57:11,890 - INFO - Saved 12 prices to bitcoin_prices.json
+2025-05-21 17:58:11,895 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:58:12,357 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:58:12,358 - INFO - Bitcoin price: $108953.995
+2025-05-21 17:58:12,359 - INFO - Added price data to the list: 2025-05-21 17:58:12, $108953.995
+2025-05-21 17:58:12,366 - INFO - Saved 13 prices to bitcoin_prices.json
+2025-05-21 17:59:12,368 - INFO - Requesting Bitcoin price from API
+2025-05-21 17:59:12,871 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 17:59:12,873 - INFO - Bitcoin price: $108922.335
+2025-05-21 17:59:12,873 - INFO - Added price data to the list: 2025-05-21 17:59:12, $108922.335
+2025-05-21 17:59:12,876 - INFO - Saved 14 prices to bitcoin_prices.json
+2025-05-21 18:00:12,877 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:00:13,059 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:00:13,061 - INFO - Bitcoin price: $109075.715
+2025-05-21 18:00:13,061 - INFO - Added price data to the list: 2025-05-21 18:00:13, $109075.715
+2025-05-21 18:00:13,062 - INFO - Saved 15 prices to bitcoin_prices.json
+2025-05-21 18:01:13,066 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:01:13,254 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:01:13,255 - INFO - Bitcoin price: $108767.64
+2025-05-21 18:01:13,256 - INFO - Added price data to the list: 2025-05-21 18:01:13, $108767.64
+2025-05-21 18:01:13,259 - INFO - Saved 16 prices to bitcoin_prices.json
+2025-05-21 18:02:13,263 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:02:13,765 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:02:13,767 - INFO - Bitcoin price: $108829.79
+2025-05-21 18:02:13,767 - INFO - Added price data to the list: 2025-05-21 18:02:13, $108829.79
+2025-05-21 18:02:13,768 - INFO - Saved 17 prices to bitcoin_prices.json
+2025-05-21 18:03:13,770 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:03:14,232 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:03:14,234 - INFO - Bitcoin price: $109027.465
+2025-05-21 18:03:14,234 - INFO - Added price data to the list: 2025-05-21 18:03:14, $109027.465
+2025-05-21 18:03:14,241 - INFO - Saved 18 prices to bitcoin_prices.json
+2025-05-21 18:04:14,246 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:04:14,752 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:04:14,753 - INFO - Bitcoin price: $109199.495
+2025-05-21 18:04:14,753 - INFO - Added price data to the list: 2025-05-21 18:04:14, $109199.495
+2025-05-21 18:04:14,755 - INFO - Saved 19 prices to bitcoin_prices.json
+2025-05-21 18:05:14,759 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:05:15,271 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:05:15,272 - INFO - Bitcoin price: $109080.905
+2025-05-21 18:05:15,273 - INFO - Added price data to the list: 2025-05-21 18:05:15, $109080.905
+2025-05-21 18:05:15,277 - INFO - Saved 20 prices to bitcoin_prices.json
+2025-05-21 18:06:15,278 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:06:15,475 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:06:15,477 - INFO - Bitcoin price: $109369.56
+2025-05-21 18:06:15,477 - INFO - Added price data to the list: 2025-05-21 18:06:15, $109369.56
+2025-05-21 18:06:15,483 - INFO - Saved 21 prices to bitcoin_prices.json
+2025-05-21 18:07:15,487 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:07:15,660 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:07:15,661 - INFO - Bitcoin price: $109402.015
+2025-05-21 18:07:15,661 - INFO - Added price data to the list: 2025-05-21 18:07:15, $109402.015
+2025-05-21 18:07:15,662 - INFO - Saved 22 prices to bitcoin_prices.json
+2025-05-21 18:08:15,666 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:08:15,844 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:08:15,845 - INFO - Bitcoin price: $109440.955
+2025-05-21 18:08:15,845 - INFO - Added price data to the list: 2025-05-21 18:08:15, $109440.955
+2025-05-21 18:08:15,849 - INFO - Saved 23 prices to bitcoin_prices.json
+2025-05-21 18:09:15,852 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:09:16,038 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:09:16,040 - INFO - Bitcoin price: $109491.42
+2025-05-21 18:09:16,040 - INFO - Added price data to the list: 2025-05-21 18:09:16, $109491.42
+2025-05-21 18:09:16,047 - INFO - Saved 24 prices to bitcoin_prices.json
+2025-05-21 18:10:16,048 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:10:16,482 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:10:16,482 - INFO - Bitcoin price: $109349.985
+2025-05-21 18:10:16,482 - INFO - Added price data to the list: 2025-05-21 18:10:16, $109349.985
+2025-05-21 18:10:16,483 - INFO - Saved 25 prices to bitcoin_prices.json
+2025-05-21 18:11:16,487 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:11:16,669 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:11:16,671 - INFO - Bitcoin price: $109267.225
+2025-05-21 18:11:16,671 - INFO - Added price data to the list: 2025-05-21 18:11:16, $109267.225
+2025-05-21 18:11:16,678 - INFO - Saved 26 prices to bitcoin_prices.json
+2025-05-21 18:12:16,678 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:12:16,873 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:12:16,875 - INFO - Bitcoin price: $109095.335
+2025-05-21 18:12:16,875 - INFO - Added price data to the list: 2025-05-21 18:12:16, $109095.335
+2025-05-21 18:12:16,882 - INFO - Saved 27 prices to bitcoin_prices.json
+2025-05-21 18:13:16,886 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:13:16,921 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:13:16,923 - INFO - Bitcoin price: $109003.465
+2025-05-21 18:13:16,923 - INFO - Added price data to the list: 2025-05-21 18:13:16, $109003.465
+2025-05-21 18:13:16,925 - INFO - Saved 28 prices to bitcoin_prices.json
+2025-05-21 18:14:16,929 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:14:17,128 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:14:17,129 - INFO - Bitcoin price: $108938.745
+2025-05-21 18:14:17,129 - INFO - Added price data to the list: 2025-05-21 18:14:17, $108938.745
+2025-05-21 18:14:17,132 - INFO - Saved 29 prices to bitcoin_prices.json
+2025-05-21 18:15:17,133 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:15:17,315 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:15:17,316 - INFO - Bitcoin price: $108889.535
+2025-05-21 18:15:17,316 - INFO - Added price data to the list: 2025-05-21 18:15:17, $108889.535
+2025-05-21 18:15:17,318 - INFO - Saved 30 prices to bitcoin_prices.json
+2025-05-21 18:16:17,321 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:16:17,500 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:16:17,502 - INFO - Bitcoin price: $109281.305
+2025-05-21 18:16:17,502 - INFO - Added price data to the list: 2025-05-21 18:16:17, $109281.305
+2025-05-21 18:16:17,504 - INFO - Saved 31 prices to bitcoin_prices.json
+2025-05-21 18:17:17,507 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:17:17,942 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:17:17,942 - INFO - Bitcoin price: $109342.185
+2025-05-21 18:17:17,942 - INFO - Added price data to the list: 2025-05-21 18:17:17, $109342.185
+2025-05-21 18:17:17,943 - INFO - Saved 32 prices to bitcoin_prices.json
+2025-05-21 18:18:17,946 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:18:18,430 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:18:18,431 - INFO - Bitcoin price: $109330.02
+2025-05-21 18:18:18,431 - INFO - Added price data to the list: 2025-05-21 18:18:18, $109330.02
+2025-05-21 18:18:18,433 - INFO - Saved 33 prices to bitcoin_prices.json
+2025-05-21 18:19:18,436 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:19:18,900 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:19:18,900 - INFO - Bitcoin price: $109139.885
+2025-05-21 18:19:18,900 - INFO - Added price data to the list: 2025-05-21 18:19:18, $109139.885
+2025-05-21 18:19:18,901 - INFO - Saved 34 prices to bitcoin_prices.json
+2025-05-21 18:20:18,904 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:20:19,097 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:20:19,098 - INFO - Bitcoin price: $109086.45
+2025-05-21 18:20:19,098 - INFO - Added price data to the list: 2025-05-21 18:20:19, $109086.45
+2025-05-21 18:20:19,100 - INFO - Saved 35 prices to bitcoin_prices.json
+2025-05-21 18:21:19,103 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:21:19,284 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:21:19,285 - INFO - Bitcoin price: $108966.155
+2025-05-21 18:21:19,286 - INFO - Added price data to the list: 2025-05-21 18:21:19, $108966.155
+2025-05-21 18:21:19,287 - INFO - Saved 36 prices to bitcoin_prices.json
+2025-05-21 18:22:19,290 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:22:19,479 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:22:19,480 - INFO - Bitcoin price: $109029.485
+2025-05-21 18:22:19,480 - INFO - Added price data to the list: 2025-05-21 18:22:19, $109029.485
+2025-05-21 18:22:19,482 - INFO - Saved 37 prices to bitcoin_prices.json
+2025-05-21 18:23:19,483 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:23:20,018 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:23:20,020 - INFO - Bitcoin price: $109133.14
+2025-05-21 18:23:20,020 - INFO - Added price data to the list: 2025-05-21 18:23:20, $109133.14
+2025-05-21 18:23:20,025 - INFO - Saved 38 prices to bitcoin_prices.json
+2025-05-21 18:24:20,028 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:24:20,213 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:24:20,214 - INFO - Bitcoin price: $109206.125
+2025-05-21 18:24:20,215 - INFO - Added price data to the list: 2025-05-21 18:24:20, $109206.125
+2025-05-21 18:24:20,216 - INFO - Saved 39 prices to bitcoin_prices.json
+2025-05-21 18:25:20,220 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:25:20,400 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:25:20,402 - INFO - Bitcoin price: $109317.505
+2025-05-21 18:25:20,402 - INFO - Added price data to the list: 2025-05-21 18:25:20, $109317.505
+2025-05-21 18:25:20,408 - INFO - Saved 40 prices to bitcoin_prices.json
+2025-05-21 18:26:20,408 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:26:20,604 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:26:20,605 - INFO - Bitcoin price: $109117.945
+2025-05-21 18:26:20,606 - INFO - Added price data to the list: 2025-05-21 18:26:20, $109117.945
+2025-05-21 18:26:20,607 - INFO - Saved 41 prices to bitcoin_prices.json
+2025-05-21 18:27:20,604 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:27:20,778 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:27:20,780 - INFO - Bitcoin price: $109076.585
+2025-05-21 18:27:20,780 - INFO - Added price data to the list: 2025-05-21 18:27:20, $109076.585
+2025-05-21 18:27:20,784 - INFO - Saved 42 prices to bitcoin_prices.json
+2025-05-21 18:28:20,784 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:28:20,991 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:28:20,991 - INFO - Bitcoin price: $109161.645
+2025-05-21 18:28:20,992 - INFO - Added price data to the list: 2025-05-21 18:28:20, $109161.645
+2025-05-21 18:28:20,993 - INFO - Saved 43 prices to bitcoin_prices.json
+2025-05-21 18:29:20,996 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:29:21,171 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:29:21,172 - INFO - Bitcoin price: $109083.085
+2025-05-21 18:29:21,172 - INFO - Added price data to the list: 2025-05-21 18:29:21, $109083.085
+2025-05-21 18:29:21,178 - INFO - Saved 44 prices to bitcoin_prices.json
+2025-05-21 18:30:21,182 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:30:21,686 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:30:21,687 - INFO - Bitcoin price: $109011.325
+2025-05-21 18:30:21,688 - INFO - Added price data to the list: 2025-05-21 18:30:21, $109011.325
+2025-05-21 18:30:21,690 - INFO - Saved 45 prices to bitcoin_prices.json
+2025-05-21 18:31:21,692 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:31:21,876 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:31:21,878 - INFO - Bitcoin price: $109017.835
+2025-05-21 18:31:21,878 - INFO - Added price data to the list: 2025-05-21 18:31:21, $109017.835
+2025-05-21 18:31:21,879 - INFO - Saved 46 prices to bitcoin_prices.json
+2025-05-21 18:32:21,883 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:32:22,365 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:32:22,366 - INFO - Bitcoin price: $108973.245
+2025-05-21 18:32:22,366 - INFO - Added price data to the list: 2025-05-21 18:32:22, $108973.245
+2025-05-21 18:32:22,368 - INFO - Saved 47 prices to bitcoin_prices.json
+2025-05-21 18:33:22,372 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:33:22,572 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:33:22,574 - INFO - Bitcoin price: $109055.805
+2025-05-21 18:33:22,574 - INFO - Added price data to the list: 2025-05-21 18:33:22, $109055.805
+2025-05-21 18:33:22,576 - INFO - Saved 48 prices to bitcoin_prices.json
+2025-05-21 18:34:22,580 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:34:22,774 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:34:22,776 - INFO - Bitcoin price: $108958.105
+2025-05-21 18:34:22,776 - INFO - Added price data to the list: 2025-05-21 18:34:22, $108958.105
+2025-05-21 18:34:22,778 - INFO - Saved 49 prices to bitcoin_prices.json
+2025-05-21 18:35:22,780 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:35:22,963 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:35:22,964 - INFO - Bitcoin price: $108840.455
+2025-05-21 18:35:22,965 - INFO - Added price data to the list: 2025-05-21 18:35:22, $108840.455
+2025-05-21 18:35:22,967 - INFO - Saved 50 prices to bitcoin_prices.json
+2025-05-21 18:36:22,970 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:36:23,161 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:36:23,162 - INFO - Bitcoin price: $108534.46
+2025-05-21 18:36:23,162 - INFO - Added price data to the list: 2025-05-21 18:36:23, $108534.46
+2025-05-21 18:36:23,166 - INFO - Saved 51 prices to bitcoin_prices.json
+2025-05-21 18:37:23,170 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:37:23,348 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:37:23,350 - INFO - Bitcoin price: $108479.885
+2025-05-21 18:37:23,350 - INFO - Added price data to the list: 2025-05-21 18:37:23, $108479.885
+2025-05-21 18:37:23,353 - INFO - Saved 52 prices to bitcoin_prices.json
+2025-05-21 18:38:23,357 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:38:23,556 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:38:23,557 - INFO - Bitcoin price: $108507.47
+2025-05-21 18:38:23,558 - INFO - Added price data to the list: 2025-05-21 18:38:23, $108507.47
+2025-05-21 18:38:23,562 - INFO - Saved 53 prices to bitcoin_prices.json
+2025-05-21 18:39:23,566 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:39:23,755 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:39:23,756 - INFO - Bitcoin price: $108499.595
+2025-05-21 18:39:23,757 - INFO - Added price data to the list: 2025-05-21 18:39:23, $108499.595
+2025-05-21 18:39:23,759 - INFO - Saved 54 prices to bitcoin_prices.json
+2025-05-21 18:40:23,763 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:40:23,956 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:40:23,957 - INFO - Bitcoin price: $108499.995
+2025-05-21 18:40:23,957 - INFO - Added price data to the list: 2025-05-21 18:40:23, $108499.995
+2025-05-21 18:40:23,962 - INFO - Saved 55 prices to bitcoin_prices.json
+2025-05-21 18:41:23,965 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:41:24,136 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:41:24,138 - INFO - Bitcoin price: $108808.265
+2025-05-21 18:41:24,138 - INFO - Added price data to the list: 2025-05-21 18:41:24, $108808.265
+2025-05-21 18:41:24,144 - INFO - Saved 56 prices to bitcoin_prices.json
+2025-05-21 18:42:24,149 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:42:24,319 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:42:24,319 - INFO - Bitcoin price: $108842.725
+2025-05-21 18:42:24,319 - INFO - Added price data to the list: 2025-05-21 18:42:24, $108842.725
+2025-05-21 18:42:24,321 - INFO - Saved 57 prices to bitcoin_prices.json
+2025-05-21 18:43:24,323 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:43:24,505 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:43:24,505 - INFO - Bitcoin price: $108787.52
+2025-05-21 18:43:24,505 - INFO - Added price data to the list: 2025-05-21 18:43:24, $108787.52
+2025-05-21 18:43:24,507 - INFO - Saved 58 prices to bitcoin_prices.json
+2025-05-21 18:44:24,511 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:44:24,688 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:44:24,689 - INFO - Bitcoin price: $108926.095
+2025-05-21 18:44:24,689 - INFO - Added price data to the list: 2025-05-21 18:44:24, $108926.095
+2025-05-21 18:44:24,690 - INFO - Saved 59 prices to bitcoin_prices.json
+2025-05-21 18:45:24,693 - INFO - Requesting Bitcoin price from API
+2025-05-21 18:45:25,173 - DEBUG - https://api.coinbase.com:443 "GET /v2/prices/BTC-USD/spot HTTP/1.1" 200 None
+2025-05-21 18:45:25,174 - INFO - Bitcoin price: $108993.865
+2025-05-21 18:45:25,174 - INFO - Added price data to the list: 2025-05-21 18:45:25, $108993.865
+2025-05-21 18:45:25,175 - INFO - Saved 60 prices to bitcoin_prices.json
+2025-05-21 18:46:25,177 - INFO - Completed collection of 60 bitcoin prices
+2025-05-21 18:46:25,180 - INFO - Generating price graph
+2025-05-21 18:46:25,656 - INFO - Graph saved
+2025-05-21 18:46:25,656 - INFO - Preparing email...
+2025-05-21 18:46:25,656 - INFO - The Maximum Price is $109,491.42 USD
+2025-05-21 18:46:28,087 - INFO - Email sent successfully
+2025-05-21 18:46:28,087 - INFO - Bitcoin price tracker application finished
